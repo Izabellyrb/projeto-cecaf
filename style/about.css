@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 3rem 1rem;
+    padding: 0 1rem;
+}
+
+.sectionSubtitle {
+    margin: 2rem 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+=======
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 3rem 1rem;
+    padding: 0 1rem;
+}
+
+.sectionSubtitle {
+    margin: 2rem 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+>>>>>>> b2ce731 (first commit)

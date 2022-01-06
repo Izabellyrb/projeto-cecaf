@@ -1,0 +1,50 @@
+<<<<<<< HEAD
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 3rem 1rem;
+    padding: 0 1rem;
+}
+
+
+.subjects ul {
+    display: none;
+    font-size: 2rem;
+    margin: 0 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.subjects ul.on {
+
+    font-size: 2rem;
+    margin: 0 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+/*FAZER BOTÃO COM TITULOS DO H2 E QUANDO CLICAR, MUDAR O INNER HTML
+
+=======
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 3rem 1rem;
+    padding: 0 1rem;
+}
+
+
+.subjects ul {
+    display: none;
+    font-size: 2rem;
+    margin: 0 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.subjects ul.on {
+
+    font-size: 2rem;
+    margin: 0 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+/*FAZER BOTÃO COM TITULOS DO H2 E QUANDO CLICAR, MUDAR O INNER HTML
+
+>>>>>>> b2ce731 (first commit)
+ESTILIZAR MELHOR OS UL (COLOCAR COR, EFEITO AO APARECER (VER OS TRANSFORMS DO INDEX) ETC*/
