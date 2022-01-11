@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 section {
     display: flex;
     flex-direction: column;
@@ -18,25 +17,27 @@ img {
 
 .sectionTitle {
     margin: 4rem 0 0 0 ;
-=======
-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-    align-items: center;
+}
+
+/*  MEDIA QUERIES  */
+
+/* small mobiles */
+@media (max-width: 480px) { 
+    
+/*titles and paragraphs*/
+.sectionTitle {
+    font-size: 1.4rem;
+}
+
+.sectionSubtitle {
+    font-size: 1.2rem;
 }
 
 p {
-    font-size: 1.6rem;
-    display: flex;
-    margin: 0.5rem 0;
+    font-size: 1.2rem;
 }
 
-img {
-    padding-right: 1rem;
+p > img {
+    display: none;
 }
-
-.sectionTitle {
-    margin: 4rem 0 0 0 ;
->>>>>>> b2ce731 (first commit)
 }

@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>CECAF - Home</title>
 
@@ -25,7 +27,15 @@
             <h2>Estudando aqui você vai mais longe!</h2>
         </div>
         <nav class="menu">
-            <ul>
+            <button class="hamburguer">
+                <span class="openIcon material-icons-round">
+                    menu
+                </span>
+                <span class="closeIcon material-icons-round">
+                    close
+                </span>
+            </button>
+            <ul class="nav">
                 <li class="one"><a href="index.html">HOME</a></li>
                 <li class="two"><a href="about.html">SOBRE</a></li>
                 <li class="three"><a href="subjects.html">DISCIPLINAS</a></li>
@@ -38,13 +48,13 @@
     <!-- obs h1 fica fora da section mesmo?-->
     <h1 class="sectionTitle">Por que escolher o CECAF?</h1>
     <section id="features">
-
+        
         <div class="features">
-            <img src="images/feature1.png" class="um">
-            <h2 class="sectionSubtitle">Melhores professores</h2>
-            <p> Os melhores professores, mestres e doutores em suas áreas</p>
+            <img src="images/feature1.png">
+            <h2 class="sectionSubtitle">Melhores professores </h2>
+            <p> Os melhores professores, mestres e doutores para auxiliar no cerescimento da sua criança</p>
         </div>
-
+        
         <div class="features">
             <img src="images/feature2.png">
             <h2 class="sectionSubtitle">Atividades diversas</h2>
@@ -56,6 +66,7 @@
             <h2 class="sectionSubtitle">Formação bilíngue</h2>
             <p>Alunos se formam bilíngues. Aulas diárias de inglês e certificado ao final do ensino fundamental II</p>
         </div>
+
 
         <div class="features">
             <img src="images/feature4.png">

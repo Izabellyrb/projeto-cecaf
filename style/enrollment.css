@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .sectionSubtitle {
     text-align: center;
 }
@@ -8,8 +7,9 @@ div.forms {
     flex-direction: column;
     font-size: 2.4rem;
     background-color: var(--lorange);
-    margin: 3rem 30rem 5rem 30rem;
-    padding: 2rem 2rem 2rem 3rem;
+    width: 40rem;
+    margin: 2rem 20rem 2rem 30rem;
+    padding: 2rem 2rem 2rem 4rem;
     border-radius: 0.5rem;
 }
 
@@ -30,36 +30,47 @@ input, select, option, textarea {
     font-size: 1.5rem;
 }
 
-=======
-.sectionSubtitle {
-    text-align: center;
+/*        MEDIA QUERIES    */
+
+/* tablets and desktops */
+@media (max-width: 1024px) {
+    div.forms {
+        font-size: 2rem;
+        width: 35rem;
+        margin: 2rem 17rem;
+    }
+    
+    input, select, option, textarea {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
 }
 
-div.forms {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.4rem;
-    background-color: var(--lorange);
-    margin: 3rem 30rem 5rem 30rem;
-    padding: 2rem 2rem 2rem 3rem;
-    border-radius: 0.5rem;
+/* medium mobiles and tablets */
+@media (max-width: 768px) {
+    div.forms {
+        font-size: 2rem;
+        width: 35rem;
+        margin: 2rem auto;
+        padding: 2rem 2rem 2rem 4rem;
+    } 
+}
+    
+
+/* small mobiles */
+@media (max-width: 480px) { 
+    div.forms {
+        font-size: 1.6rem;
+        width: 30rem;
+        margin: 2rem auto;
+        padding: 2rem 2rem 2rem 3rem;
+    }
+    
+    input, select, option, textarea {
+        font-size: 1rem;
+    }
 }
 
-label {
-    padding: 1rem 0 0 0;
-    font-weight: bold;
-}
-
-input, select, option, textarea {
-    font-size: 1.4rem;
-    border:none;
-    outline: none;
-    border-radius: 0.2rem;
-    padding-left: 0.5rem;
-}
-
-.btn {
-    font-size: 1.5rem;
-}
-
->>>>>>> b2ce731 (first commit)
