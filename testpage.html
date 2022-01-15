@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/global.css">
     <title>Teste</title>
 </head>
+<style>
+    
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image:radial-gradient(#ffc400, #fca401);
+        background-attachment: fixed;
+        font-family: 'Noto Sans', sans-serif;
+        margin: 0
+    }   
+
+    section {
+        font-size: 2.6rem;
+        color: #000;
+        font-weight: bolder;
+    }
+
+    .btn {
+        color: #000;
+        margin-top: 1rem
+    }
+
+    @media (max-width: 480px){
+        section {
+            font-size: 1.8rem;
+    }
+
+        .btn {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+}
+</style>
+</head>
+
 <body>
-    Esta pagina é um teste, o botão/link funcionou!
+<section>
+    Pagina teste. O link funciona! :) 
+</section>
+<br>
+<a href="index.html">
+    <button class="btn">VOLTAR</button>
+</a>
 </body>
 </html>
