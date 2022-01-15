@@ -60,11 +60,10 @@ input.showbtn {
     font-weight: bold;
     border-radius: 0.5rem;
     color: #fff;
-
 }
 
-input.showbtn:last-child {
-    padding: 1rem 0.5rem;
+input.showbtn:nth-last-child(2) {
+    padding: 1rem 0.6rem ;
 }
 
 input.showbtn:hover {
@@ -74,7 +73,7 @@ input.showbtn:hover {
 
 /* lists images */
 
-div > img{
+div > img {
     width: 26rem;
     height: 26rem;
     border-radius: 50rem;
@@ -89,3 +88,42 @@ img.kids1, img.kids2 {
 img.kids1.on , img.kids2.on {
     display: block
 }
+
+
+/*   MEDIA QUERIES  */
+
+
+/* medium mobiles and tablets */
+@media (max-width: 768px) {
+    input.showbtn {
+        width: 24rem;
+        font-size: 2rem;
+    }
+
+    div > img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .list ul {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* small mobiles */
+@media (max-width: 480px) { 
+    input.showbtn {
+        width: 22rem;
+        font-size: 1.8rem;
+    }
+
+    img.kids1.on , img.kids2.on {
+        display: none;
+    }
+
+    .list ul {
+        font-size: 2rem;
+    }
+}
+

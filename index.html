@@ -26,23 +26,21 @@
             <h1>Centro Educacional Cecília A. Freire</h1>
             <h2>Estudando aqui você vai mais longe!</h2>
         </div>
-        <nav class="menu">
-            <button class="hamburguer">
-                <span class="openIcon material-icons-round">
-                    menu
-                </span>
-                <span class="closeIcon material-icons-round">
-                    close
-                </span>
-            </button>
-            <ul class="nav">
-                <li class="one"><a href="index.html">HOME</a></li>
-                <li class="two"><a href="about.html">SOBRE</a></li>
-                <li class="three"><a href="subjects.html">DISCIPLINAS</a></li>
-                <li class="four"><a href="enrollment.html">MATRICULAS</a></li>
-                <li class="five"><a href="contact.html">CONTATO</a></li>
+        <nav class="menuSection">
+            <div class="menuToggle" onclick="menuOnClick()">
+                <div id="bar1" class=bar></div>
+                <div id="bar2" class=bar></div>
+                <div id="bar3" class=bar></div>
+            </div>
+            <ul class="menu-items">
+                <li id="one" class="item"><a href="index.html">HOME</a></li>
+                <li id="two" class="item"><a href="about.html">SOBRE</a></li>
+                <li id="three" class="item"><a href="subjects.html">DISCIPLINAS</a></li>
+                <li id="four" class="item"><a href="enrollment.html">MATRICULAS</a></li>
+                <li id="five" class="item"><a href="contact.html">CONTATO</a></li>
             </ul>
         </nav>
+        <div class="menu-bg"></div>
     </header>
 
     <!-- obs h1 fica fora da section mesmo?-->
@@ -134,7 +132,10 @@
         </div>
         <a href="testpage.html" class="btn">ENVIE SEU CURRÍCULO</a>  
     </section>
+
     <footer> CECAF 2021 - Todos os direitos reservados :) </footer>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
