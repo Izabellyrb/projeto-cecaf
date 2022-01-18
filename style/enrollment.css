@@ -6,10 +6,10 @@ div.forms {
     display: flex;
     flex-direction: column;
     font-size: 2.4rem;
-    background-color: var(--lorange);
+    background-color: rgb(255, 196, 0);
     width: 40rem;
     margin: 2rem 20rem 2rem 30rem;
-    padding: 2rem 2rem 2rem 3rem;
+    padding: 2rem 3rem 2rem 3rem;
     border-radius: 0.5rem;
 }
 
@@ -28,6 +28,7 @@ input, select, option, textarea {
 
 .btn {
     font-size: 1.5rem;
+    margin-top: 1rem
 }
 
 /*        MEDIA QUERIES    */

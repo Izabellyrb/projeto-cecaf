@@ -24,17 +24,23 @@
                 <h1>Centro Educacional Cecília A. Freire</h1>
                 <h2>Estudando aqui você vai mais longe!</h2>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li class="one"><a href="index.html">HOME</a></li>
-                    <li class="two"><a href="about.html">SOBRE</a></li>
-                    <li class="three"><a href="subjects.html">DISCIPLINAS</a></li>
-                    <li class="four"><a href="enrollment.html">MATRICULAS</a></li>
-                    <li class="five"><a href="contact.html">CONTATO</a></li>
+            <nav class="menuSection">
+                <div class="menuToggle" onclick="menuOnClick()">
+                    <div id="bar1" class=bar></div>
+                    <div id="bar2" class=bar></div>
+                    <div id="bar3" class=bar></div>
+                </div>
+    
+                <ul class="menu-items">
+                    <a href="index.html"><li id="one" class="item">HOME</li></a>
+                    <a href="about.html"><li id="two" class="item">SOBRE</li></a>
+                    <a href="subjects.html"><li id="three" class="item">DISCIPLINAS</li></a>
+                    <a href="enrollment.html"><li id="four" class="item">MATRICULAS</li></a>
+                    <a href="contact.html"><li id="five" class="item">CONTATO</li></a>
                 </ul>
             </nav>
         </header>
-
+        
         <h1 class="sectionTitle">Faça sua matrícula</h1>
         <h2 class="sectionSubtitle">Preencha o formulário abaixo para entrarmos em contato com detalhes do ano que deseja fazer a matrícula.</h2> 
 
@@ -56,7 +62,7 @@
                 <input type="tel" name="fcel" id="fcel" size="20" placeholder="DDD + número"></label>
 
                 <label for="finfo">Outras Informações:<br>
-                <textarea name="finfo" id="finfo" rows="5" cols="40" placeholder="Deixe algum comentário ou dúvida, se desejar"></textarea></label>
+                <textarea name="finfo" id="finfo" rows="5" cols="37" placeholder="Deixe algum comentário ou dúvida, se desejar"></textarea></label>
 
                 <label for="fsurvey">Como ficou sabendo de nossa escola?<br>
                     <select name="fsurvey" id="fsurvey">
@@ -67,11 +73,14 @@
                         <option value="events">Eventos</option>
                     </select>
                 </label><br>
-                <input type="submit" class="btn"></input>
+                <input type="submit" class="btn" value="Enviar"></input>
             </div>
         </form>
 
         <footer> CECAF 2021 - Todos os direitos reservados :) </footer>
     </div>
+
+    <script src="scripts.js"></script>
+    
 </body>
 </html>

@@ -32,7 +32,7 @@ div .list{
 
 .list ul li::before { /*Internet Explorer isn't reading li::marker yet*/
     content: "\2022"; /*CSS code for bullets*/
-    color: var(--orange);
+    color: rgb(252, 164, 1);
     font-size: 2rem;
     display: inline-block;
     padding: 0 1rem;
@@ -50,7 +50,7 @@ ul.elementaryS.on, ul.middleS.on {
 /* buttons */
 
 input.showbtn {
-    background-color: var(--orange);
+    background-color: rgb(252, 164, 1);
     margin: 2rem;
     padding: 1rem;
     cursor: pointer;

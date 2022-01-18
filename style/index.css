@@ -63,7 +63,7 @@ figcaption:hover {
 section#contact{
     display: flex;
     flex-direction: row;
-    background-color: var(--lorange);
+    background-color: rgb(255, 196, 0);
     margin: 0;
     padding: 1rem;
     justify-content: space-around;
@@ -85,3 +85,5 @@ section#contact{
     }
 
 }
+
+

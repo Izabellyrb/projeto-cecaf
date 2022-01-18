@@ -1,4 +1,5 @@
-/**/
+/*enrollment page - buttons*/
+
 var listes = document.querySelector('.elementaryS');
 var listms =  document.querySelector('.middleS')
 var img = document.querySelector('.kids1')
@@ -18,3 +19,14 @@ function show2() {
     img.classList.remove('on')
 }
 
+
+
+/* hamburguer menu */
+
+var menuToggle =  document.querySelector('.menuToggle')
+var nav = document.querySelector('.menuSection')
+
+function menuOnClick() {
+    menuToggle.classList.toggle('on')
+    nav.classList.toggle('on')   
+}

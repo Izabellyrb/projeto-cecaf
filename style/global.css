@@ -2,29 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
     font-size: 62.5%;
 }
 
-html {
-    --blue: rgb(88, 166, 255);
-    --red: rgb(255, 0, 0); 
-    --yellow: rgb(255, 238, 0);
-    --green: rgb(2, 165, 2);
-    --orange: rgb(252, 164, 1);
-    --lorange:rgb(255, 196, 0);
-    --bg: rgba(233, 233, 233, 0.397);
-    --containerbg: rgb(250, 232, 215)
-}
-
 body {
-    background-color:var(--bg);
+    background-color:rgba(233, 233, 233, 0.397);
 }
 
 .container {
     width: 100rem;
-    background-color: var(--containerbg) ;
+    background-color: rgb(250, 232, 215) ;
     margin: auto;
 }
 
@@ -53,48 +44,43 @@ header .logo {
     margin-bottom: 5rem;
 }
 
-nav {
+.menu-items {
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
 
-nav li.one {
-    background-color: var(--blue);
+.menu-items li#one {
+    background-color: rgb(88, 166, 255);
 }
-nav li.two {
-    background-color: var(--red);
+.menu-items li#two {
+    background-color: rgb(255, 0, 0);
 }
-nav li.three {
-    background-color: var(--green);
+.menu-items li#three {
+    background-color: rgb(2, 165, 2);
 }
-nav li.four {
-    background-color: var(--yellow);
+.menu-items li#four {
+    background-color: rgb(255, 238, 0);
 }
-nav li.five {
-    background-color: var(--lorange);
-    
+.menu-items li#five {
+    background-color: rgb(255, 196, 0);
 }
 
-nav li {
+.menu-items li {
     display: inline;
-    padding: 2rem 5.3rem 0.4rem 5.3rem;
+    padding: 1rem 5.3rem 0 5.2rem;
     border-radius: 1rem 1rem 0 0;
 }
 
-nav li:hover {
-    padding-top: 2.5rem;
+.menu-items li:hover {
+    padding-top: 2rem;
     cursor: pointer;
 }
 
-li > a{
+a > li{
     font-size: 2rem;
     font-weight: bold; 
     color:#000;
-}
-
-li > a:hover {
-    color: var(--containerbg);
 }
 
 
@@ -106,7 +92,7 @@ li > a:hover {
     border: solid 0.2rem #fff;
     font-weight: bold;
     border-radius: 0.5rem;
-    background-color: var(--orange);
+    background-color: rgb(252, 164, 1);
     color: #fff;
     cursor: pointer;
 }
@@ -138,7 +124,7 @@ p {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--orange);
+    background-color: rgb(252, 164, 1);
     font-size: 1rem;
     font-weight: bold;
 }
@@ -170,19 +156,18 @@ footer {
         padding-top: 1rem;
     }
     
-    nav li {
-        font-size: 0.8rem;
+    .menu-items li {
+        font-size: 1.6rem;
         padding: 1.5rem 3.2rem 0.3rem 3.2rem;
     }
     
-    nav li:hover {
+    .menu-items li:hover {
         padding-top: 1.8rem;
     }
     
-    li > a {
-        font-size: 1.6rem;
+    a > li {
+        font-size: 1.8rem;
     }
-
 }
 
 /* medium mobiles and tablets */
@@ -200,76 +185,18 @@ footer {
     }
     
     .welcomeText h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-top: 2rem
     }
     
     .welcomeText h2{
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 1.8rem;
     }
-    
-/*
-    /* mobile menu 
-
-    .hamburguer {
-        position: absolute;
-        z-index: 100;
-        top: 1rem;
-        right: 1rem;
-        width: 3rem;
-        padding: 1rem 0;
-        border: none;
-        background-color: var(--orange);
-        cursor: pointer;
-    }
-
-    .closeIcon {
-        display: none;
-    }
-
-    .nav {
-        position: fixed;
-        transform: translateY(1%); /*obs mudar para  -100
-        transition: transform 0.2s;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        background-color: var(--lorange);
-    }
-
-    .nav li {
-        display: block;
-        padding: 2rem 0.3rem;
-        }
-        
-    }
-
-    /*.nav li.one, .nav li.two, .nav li.three, .nav li.four, .nav li.five {
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 0;
-
-    }
-
-    .nav > li > a {
-        font-size: 1.4rem;
-        font-weight: bold; 
-        color:rgb(2, 165, 2)
-    }
-    
-
-    .showMenu {
-        transform: translateY(0);
-    }
-*/
 
     /* buttons */
     .btn {
         padding: 0.5rem 0.5rem;
         border: solid 0.2rem #fff;
-
     }
 
     /*titles and paragraphs*/
@@ -285,6 +212,81 @@ footer {
         font-size: 1.4rem;
     }
 
+    /* mobile menu*/
+    .menu-items {
+        display: none;
+    }
+    
+    .menuToggle {
+        width: 3rem;
+        height: 2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 2rem;
+        cursor: pointer;
+        z-index: 1;  
+    }
+
+    #bar1, #bar2, #bar3 {
+        width: 100%;
+        height: 0.5rem;
+        background-color: #000;
+        margin: 0.3rem;
+        border-radius: 2rem;
+        transition: 0.3s ease;
+    }
+
+    .menuToggle.on {
+        position: fixed;
+    }
+
+    .menuToggle.on #bar1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menuToggle.on #bar2 {
+        opacity: 0;
+    }
+
+    .menuToggle.on #bar3 {
+        transform: rotate(-45deg) translate(6px, -7px);
+    }
+
+    /* menu list */
+    .menuSection.on {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuSection.on ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 25rem;
+        height: 100vh;
+        background-color: rgb(255, 196, 0);
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .menuSection.on li#one, .menuSection.on li#two, .menuSection.on li#two , .menuSection.on li#three , .menuSection.on li#four, .menuSection.on li#five   {
+        background-color: rgb(255, 196, 0);
+    }
+
+    .menuSection.on li {
+        display: block;
+        position: relative;
+        border-radius: 0;
+        margin: 1rem 0;
+        font-size: 1.6rem; /*ver se isso muda mesmo*/
+    }
+
+    .menuSection.on li:hover {
+        transform:scale(2rem);
+    }
+}
 
 /* small mobiles */
 @media (max-width: 480px) { 
@@ -305,8 +307,12 @@ footer {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-    
 
+    /* menu */
+    .menuSection.on li {
+        font-size: 1.4rem; /*ver se isso muda mesmo*/
+    }
+    
     /* buttons */
     .btn {
         padding: 0.2rem 0.2rem;
