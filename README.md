@@ -8,5 +8,5 @@ Projeto de criação de um site educacional completo, com áreas de informaçõe
 - [x] Layout responsivo
 - [x] mudanças de botões e info com Javascript
 <h4 align="center"> 
-	:heavy_check_mark: Em Construção
+	:heavy_check_mark: Finalizado!
 </h4>
