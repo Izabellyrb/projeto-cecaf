@@ -223,7 +223,7 @@ footer {
         position: absolute;
         right: 0;
         top: 0;
-        margin: 2rem;
+        margin: 4rem 2rem;
         cursor: pointer;
         z-index: 1;  
     }
@@ -239,6 +239,7 @@ footer {
 
     .menuToggle.on {
         position: fixed;
+        margin: 3rem 1.5rem;
     }
 
     .menuToggle.on #bar1 {
@@ -254,10 +255,6 @@ footer {
     }
 
     /* menu list */
-    .menuSection.on {
-        display: flex;
-        flex-direction: column;
-    }
 
     .menuSection.on ul {
         display: flex;
@@ -268,8 +265,9 @@ footer {
         width: 25rem;
         height: 100vh;
         background-color: rgb(255, 196, 0);
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 4rem 0 0 4rem;
     }
+
 
     .menuSection.on li#one, .menuSection.on li#two, .menuSection.on li#two , .menuSection.on li#three , .menuSection.on li#four, .menuSection.on li#five   {
         background-color: rgb(255, 196, 0);
@@ -279,12 +277,22 @@ footer {
         display: block;
         position: relative;
         border-radius: 0;
-        margin: 1rem 0;
-        font-size: 1.6rem; /*ver se isso muda mesmo*/
+        margin: 1rem 0; 
+        animation-duration: 1s;
+        animation-name: slide;
+    }
+    
+    @keyframes slide {
+        from {
+            margin-left: 10%;
+        }
+        to{
+            margin-left: 0%;
+        }     
     }
 
-    .menuSection.on li:hover {
-        transform:scale(2rem);
+    .menu-items li:hover {
+        color: rgba(0, 0, 0, 0.486);
     }
 }
 
@@ -306,18 +314,6 @@ footer {
     .welcomeText h2{
         font-size: 1.2rem;
         margin-bottom: 1rem;
-    }
-
-    /* menu */
-    .menuSection.on li {
-        font-size: 1.4rem; /*ver se isso muda mesmo*/
-    }
-    
-    /* buttons */
-    .btn {
-        padding: 0.2rem 0.2rem;
-        border: solid 0.2rem #fff;
-        font-size: 0.5rem;
     }
 
     /*titles and paragraphs*/

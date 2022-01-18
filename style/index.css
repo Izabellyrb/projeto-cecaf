@@ -86,4 +86,36 @@ section#contact{
 
 }
 
+/* small mobiles */
+@media (max-width: 480px) { 
+    
+    .welcomeText h1 {
+        font-size: 1.6rem;
+        margin-top: 2rem
+    }
+    
+    .welcomeText h2{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* buttons */
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    /*titles and paragraphs*/
+    .sectionTitle {
+        font-size: 1.6rem;
+    }
+
+    .sectionSubtitle {
+        font-size: 1.4rem;
+    }
+
+    .features p {
+        font-size: 1.4rem
+    }
+}
+
 

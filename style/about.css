@@ -21,6 +21,20 @@ section {
     padding: 0.5rem 1rem;
 }
 
+ul.list {
+    font-size: 2.6rem;
+    margin: 0 0 1rem 1rem;
+    list-style: none;
+}
+
+.list li::before { /*Internet Explorer isn't reading li::marker yet*/
+    content: "\2022"; /*CSS code for bullets*/
+    color: rgb(252, 164, 1);
+    font-size: 2.2rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
 .aboutImg {
     align-self: center;
     width: 60%;
@@ -30,8 +44,27 @@ section {
 
 /*        MEDIA QUERIES    */
 
+/* medium mobiles and tablets */
+@media (max-width: 768px) {
+    ul.list {
+        font-size: 2.4rem;
+    }
+    
+    .list li::before { 
+        font-size: 1.8rem;
+    }
+}
+
 /* small mobiles */
 @media (max-width: 480px) { 
+    ul.list {
+        font-size: 1.9rem;
+    }
+
+    .list li::before { 
+        font-size: 1.5rem;
+    }
+
     .aboutImg {
         width: 80%;
     }
