@@ -21,7 +21,7 @@ body {
 
 /*Banner and menu*/
 header {
-    background-image: url(/images/bannerB.png);
+    background-image: url(../images/bannerB.png);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ footer {
     }
 
     header {
-        background-image: url(/images/bannerM.png);
+        background-image: url(../images/bannerM.png);
     }
     
     header .logo {
@@ -177,7 +177,7 @@ footer {
     }
 
     header {
-        background-image: url(/images/bannerS.png);
+        background-image: url(../images/bannerS.png);
     }
     
     header .logo {
