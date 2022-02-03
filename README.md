@@ -2,6 +2,7 @@
 
 # projeto-cecaf
 Projeto de criação de um site educacional completo, com áreas de informações sobre o centro educacional e área simples de cadastro.<br>
+_Obs: área de cadastro sem ligação com back-end._
 
 ### Recursos
 - [x] HTML e CSS
